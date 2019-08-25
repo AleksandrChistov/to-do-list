@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Список дел</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+
+		<div class="affairs">
+			<div class="affairs__list">
+				<div class="affairs__title">Список дел:</div>
+				<p class="affairs__list-empty">Список пуст...</p>
+
+			</div>
+			<div class="affairs__add">
+					<div class="affairs__title">Добавить новое дело</div>
+					<form class="affairs__form" action="#" method="POST">
+						<label for="name"><p><span>*</span> Название</p></label>
+						<input class="affairs__form-title" type="text" id="name" name="name" required>
+						
+						<label for="description" required><p><span>*</span> Описание</p></label>
+						<textarea class="affairs__form-description" name="description" id="description" required></textarea>
+						
+						<input class="affairs__form-btn" type="submit" value="Добавить дело">
+					</form>
+			</div>
+		</div>
+
+	</body>
+</html>
